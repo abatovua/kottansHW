@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Order</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header></header>
+	<main>
+		<form name="orderform">
+			<section class="order-info">
+				<div class="order-details">
+					<div class="order-details-description">
+						<h1>Your order</h1>
+						<table>
+							<tr>
+								<th>Items</th>
+								<th>Details</th>
+								<th>Price</th>
+								<th>Delivery</th>
+							</tr>
+							<tr>
+								<td>2 documents</td>
+								<td>2 languages</td>
+								<td>$ 696.06</td>
+								<td>48 hours*</td>
+							</tr>
+						</table>
+					</div>
+					<div class="order-details-buttons">
+						<button class="place-order">Place order</button>
+						<button class="print-quote">Print a quote</button>
+					</div>
+				</div>
+				<div class="help-center">
+					<h1>Help center</h1>
+					<p>If you need assistance while placing your order, contact one of our beloved Project Manager by phone or email.</p>
+					<a href="tel:+9710555555" class="help-phone">+971 (0) 555 555</a>
+          			<a href="mailto:help@qtest.com">help@qtest.com</a>
+				</div>
+			</section>
+			<section class="order-options">
+				<h1 class="order-options-mheading">Select what you want to translate</h1>
+				<div class="subject-change-wrapper">
+					<div>
+						<input type="radio" name="translateSubject" value="website" id="websiteRadio">
+						<label for="websiteRadio">
+							<img src="img/website.svg" alt="website">
+							<p>Website</p>
+						</label>
+					</div>
+					<div>
+						<input type="radio" name="translateSubject" value="documents" id="documentsRadio" checked>
+						<label for="documentsRadio">
+							<img src="img/documents.svg" alt="documents">
+							<p>Documents</p>
+						</label>
+					</div>
+					<div>
+						<input type="radio" name="translateSubject" value="social" id="socialRadio">
+						<label for="socialRadio">
+							<img src="img/socials.svg" alt="socials">
+							<p>Social Account</p>
+						</label>
+					</div>
+				</div>
+				<div class="upload">
+					<h1>Upload your documents</h1>
+					<input type="file" name="files" id="uploadfiles">
+					<label for="uploadfiles">Upload a new file</label>
+					<div class="upload-table-wrapper">
+						<table>
+			              <tr>
+			                <th>File name</th>
+			                <th>File size</th>
+			                <th>Number of words</th>
+			                <th>Remove</th>
+			              </tr>
+			              <tr>
+			                <td>bussines_operations.docx</td>
+			                <td>78kb</td>
+			                <td>842</td>
+			                <td><img src="img/garbage.png" alt="delete"></td>
+			              </tr>
+			              <tr>
+			                <td>bussines_financial.docx</td>
+			                <td>26kb</td>
+			                <td>2,326</td>
+			                <td><img src="img/garbage.png" alt="delete"></td>
+			              </tr>
+			            </table>
+			        </div>
+				</div>
+				<div class="language-pairings">
+					<h1>Choose your languages pairings</h1>
+					<div>
+						<label for="from-language">From: </label>
+						<div class="lang-select-wrapper">
+							<select id="from-language" name="input-lang">
+					            <option value="en">English</option>
+					            <option value="esp">Spanish</option>
+					            <option value="fr">France</option>
+					            <option value="it">Italic</option>
+	          				</select>
+          				</div>
+					</div>
+					<div class="output-languages">
+						<div class="lang-select-wrapper">
+							<label for="to-language">To: </label>
+							<select id="to-language" name="output-lang">
+					            <option value="ar" selected>Arabic</option>
+					            <option value="krd">Kurdish</option>
+					            <option value="ua">Ukrainian</option>
+					            <option value="it">Polish</option>
+	          				</select>
+          				</div>
+          				<div class="lang-select-wrapper">
+							<select id="to-language" name="output-lang2">
+					            <option value="ar">Arabic</option>
+					            <option value="krd" selected>Kurdish</option>
+					            <option value="ua">Ukrainian</option>
+					            <option value="it">Polish</option>
+	          				</select>
+          				</div>
+          				<button class="delete-language">&nbsp;</button>
+          				<button class="add-language">+&nbsp;&nbsp;&nbsp;Add</button>
+					</div>
+				</div>
+				<div class="secondary-wrapper">
+					<div class="desired-tone">
+						<h1>Select your desired tone</h1>
+						<input type="radio" name="tone" value="casual" id="forCasual">
+						<label for="forCasual">
+							Friendly / Casual
+						</label>
+
+						<input type="radio" name="tone" value="pro" id="forPro" checked>
+						<label for="forPro">
+							Corporate / Pro
+						</label>
+
+						<input type="radio" name="tone" value="media" id="forMedia">
+						<label for="forMedia">
+							Media / Formal
+						</label>
+					</div>
+					<div class="urgency">
+						<h1>Tell us how urgent this job is</h1>
+						<input type="range" name="urgency" min="1" max="3">
+						<ul>
+							<li>I got time</li>
+							<li>Average</li>
+							<li>Yesterday</li>
+						</ul>
+						<div class="timeline-description">
+				            <h2>Timeline info</h2>
+				            <p>With an <strong>Average</strong> timeline set up, our expect translator can take a reseonable amount of time perfecting your translation.</p>
+				        </div>
+					</div>
+				</div>
+				<div class="sign-up">
+					<h1>Sign up and choose a payment method</h1>
+					<p>Already have an account with us? <a href="#">Sign in.</a></p>
+					<div class="sign-up-input-wrapper">
+						<label for="fullname">Full name</label>
+						<input type="text" id="fullname" name="fullName" placeholder="Mathieu Mayer">
+					</div><br/>
+					<div class="sign-up-input-wrapper">
+						<label for="email">Email adress</label>
+						<input type="email" id="email" name="email" placeholder="mathieu.mm@me.com">
+					</div>
+					<div class="sign-up-input-wrapper">
+						<label for="fullname">Choose a password</label>
+						<input type="password" id="password" name="password">
+					</div>
+
+				</div>
+			</section>
+		</form>
+	</main>
+	<footer></footer>
+</body>
+</html>

@@ -7,6 +7,11 @@ const html =
     <div class="col-lg-6 col-md-push-5 col-sm-4"></div>
     <div class="col-lg-1 col-md-2 col-sm-3 js-example"></div>
     <div class="js-temp"></div>
+    <ul>
+        <li class="js-temp"></li>
+        <li class="col-lg-6 col-md-push-5 col-sm-4"></li>
+        <li class="col-lg-1 col-md-2 col-sm-3 js-example"></li>
+    </ul>
 `
 const bootstrapPattern = /col-(xs|sm|md|lg)?(-\w+)?-\d+/i;
 
