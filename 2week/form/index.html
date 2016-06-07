@@ -165,16 +165,33 @@
 					<p>Already have an account with us? <a href="#">Sign in.</a></p>
 					<div class="sign-up-input-wrapper">
 						<label for="fullname">Full name</label>
-						<input type="text" id="fullname" name="fullName" placeholder="Mathieu Mayer">
+						<input class="sign-up-input" type="text" id="fullname" name="fullName" placeholder="Mathieu Mayer" pattern="^\w+$">
+						<span></span>
 					</div><br/>
 					<div class="sign-up-input-wrapper">
 						<label for="email">Email adress</label>
-						<input type="email" id="email" name="email" placeholder="mathieu.mm@me.com">
+						<input class="sign-up-input" type="email" id="email" name="email" placeholder="mathieu.mm@me.com">
+						<span></span>
 					</div>
 					<div class="sign-up-input-wrapper">
 						<label for="fullname">Choose a password</label>
-						<input type="password" id="password" name="password">
-					</div>
+						<input class="sign-up-input" type="password" id="password" name="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" pattern="^[0-9a-zA-Z]{8,}$">
+						<span></span>
+					</div><br/>
+
+					<input type="radio" id="forCard" name="card" value="card">
+					<label class="sign-up-radio-label" for="forCard">
+						<img src="img/visa.png" alt="visa">
+						<img src="img/mastercard.png" alt="mastercard">
+					</label>
+					<input type="radio" id="forPaypal" name="paypal" value="paypal">
+					<label class="sign-up-radio-label" for="forPaypal">
+						<img src="img/paypal.png" alt="paypal">
+					</label>
+					<input type="radio" id="forAmazon" name="amazon" value="amazon">
+					<label class="sign-up-radio-label" for="forAmazon">
+						<img src="img/amazon.png" alt="amazon">
+					</label>
 
 				</div>
 			</section>

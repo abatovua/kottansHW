@@ -695,7 +695,7 @@ input[type=range]::-ms-thumb
 
 	p
 	{
-		margin: 0 0 90px 0;
+		margin: 0 0 60px 0;
 		font-size: 0.8rem;
 		color: #9fa5bb;
 
@@ -709,15 +709,100 @@ input[type=range]::-ms-thumb
 .sign-up-input-wrapper
 {
 	display: inline-block;
+	margin-bottom: 30px;
+	margin-right: 20px;
+	position: relative;
 
 	label
 	{
 		display: block;
+		margin-bottom: 10px;
+		padding-left: 15px;
 		text-transform: uppercase;
 		font-size: 0.8rem;
 		font-weight: 700;
 		color: #a5abc5;
 	}
+
+	span
+	{
+		position: absolute;
+		top: 37px;
+		right: 20px;
+
+		&::after
+		{
+			display: none;
+		}
+	}
+}
+
+.sign-up-input
+{
+	padding: 0 18px;
+	width: 300px;
+	height: 45px;
+	border: 1px solid #d7d9e0;
+	border-radius: 5px;
+	color: #6e768f;
+	vertical-align: middle;
+
+	&:valid:focus + span
+	{
+		&::after
+		{
+			display: block;
+			content: url('../img/ok.png');
+		}
+	}
+
+	&:valid:focus + span
+	{
+		&::after
+		{
+			display: block;
+			content: url('../img/ok.png');
+		}
+	}
+
+	&:invalid:focus + span
+	{
+		&::after
+		{
+			display: block;
+			content: url('../img/cross.png');
+		}
+	}
+}
+
+::-webkit-input-placeholder
+{
+   color: #6e768f;
+}
+
+:-moz-placeholder
+{
+   color: #6e768f;  
+}
+
+::-moz-placeholder
+{
+   color: #6e768f;  
+}
+
+:-ms-input-placeholder
+{  
+   color: #6e768f;  
+}
+
+.sign-up-radio-label
+{
+	display: flex;
+	width: 200px;
+	height: 90px;
+	background-color: #f7f7fa;
+	border: 1px solid #d7d9e0;
+	border-radius: 5px;
 }
 
 
