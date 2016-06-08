@@ -178,25 +178,61 @@
 						<input class="sign-up-input" type="password" id="password" name="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" pattern="^[0-9a-zA-Z]{8,}$">
 						<span></span>
 					</div><br/>
-
-					<input type="radio" id="forCard" name="card" value="card">
-					<label class="sign-up-radio-label" for="forCard">
-						<img src="img/visa.png" alt="visa">
-						<img src="img/mastercard.png" alt="mastercard">
-					</label>
-					<input type="radio" id="forPaypal" name="paypal" value="paypal">
-					<label class="sign-up-radio-label" for="forPaypal">
-						<img src="img/paypal.png" alt="paypal">
-					</label>
-					<input type="radio" id="forAmazon" name="amazon" value="amazon">
-					<label class="sign-up-radio-label" for="forAmazon">
-						<img src="img/amazon.png" alt="amazon">
-					</label>
+					<div class="payment-method-wrapper">
+						<input type="radio" id="forCard" name="method" value="card" checked>
+						<label for="forCard">
+							<img src="img/visa.png" alt="visa">
+							<img src="img/mastercard.png" alt="mastercard">
+						</label>
+						<input type="radio" id="forPaypal" name="method" value="paypal">
+						<label for="forPaypal">
+							<img src="img/paypal.png" alt="paypal">
+						</label>
+						<input type="radio" id="forAmazon" name="method" value="amazon">
+						<label for="forAmazon">
+							<img src="img/amazon.png" alt="amazon">
+						</label>
+					</div>
+					<div class="method-credentials-wrapper">
+						<div class="payment-input">
+							<label for="cardnumber">Card number</label>
+							<input type="text" id="cardnumber" name="cardnumber" placeholder="1111-2222-3333-4444">
+						</div>
+						<div class="payment-input">
+							<label for="expiry">Expiry date</label>
+							<input type="text" id="expiry" name="expiry" placeholder="08/17">
+						</div>
+						<div class="payment-input">
+							<label for="cvv">Code</label>
+							<input type="text" id="cvv" name="cvv" placeholder="456">
+						</div>
+					</div>
+					<div class="submit-wrapper">
+						<div class="terms-wrapper">
+							<input type="checkbox" name="terms" checked>
+							<p>I agree to the <a href="#">Terms & Conditions</a></p>
+						</div>
+						<button class="place-order">Place order</button>
+						<button class="print-quote">Print a quote</button>
+					</div>
 
 				</div>
 			</section>
 		</form>
 	</main>
-	<footer></footer>
+	<footer>
+		<div class="footer-content-wrapper">
+			<section class="footer-slot">
+				<h1>What we do</h1>
+				<p>We provide a full range of language services including content development, document, website and social media accounts translations.</p>
+			</section>
+			<section class="footer-slot">
+				<h1>Our main office</h1>
+				<address></address>
+			</section>
+			<section class="footer-slot"></section>
+			<section class="footer-slot"></section>
+		</div>
+	</footer>
 </body>
 </html>

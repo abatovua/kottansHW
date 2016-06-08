@@ -13,8 +13,12 @@ html {
   font-size: 16px; }
 
 body {
+  margin: 0; }
+
+main {
   width: 980px;
-  margin: 10px auto 10px auto;
+  margin: 0 auto;
+  margin-bottom: 110px;
   background-color: #ffffff;
   border: 1px solid #c9d0e1;
   border-radius: 3px; }
@@ -623,12 +627,107 @@ input[type=range]::-ms-thumb {
 :-ms-input-placeholder {
   color: #6e768f; }
 
-.sign-up-radio-label {
+.payment-method-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 200px;
-  height: 90px;
-  background-color: #f7f7fa;
-  border: 1px solid #d7d9e0;
-  border-radius: 5px; }
+  margin-bottom: 60px; }
+  .payment-method-wrapper label {
+    margin-right: 30px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 200px;
+    height: 90px;
+    background-color: #f7f7fa;
+    border: 1px solid #d7d9e0;
+    border-radius: 5px;
+    cursor: pointer; }
+    .payment-method-wrapper label:nth-child(2) img:first-child {
+      margin-right: 5px; }
+    .payment-method-wrapper label::after {
+      display: none;
+      content: url("../img/ok.png");
+      position: absolute;
+      top: -10px;
+      right: -10px; }
+
+[name="method"]:checked + label {
+  border: 5px solid #76a7e1; }
+  [name="method"]:checked + label::after {
+    display: block; }
+
+.method-credentials-wrapper {
+  margin-bottom: 90px; }
+
+.payment-input {
+  display: inline-block;
+  margin-right: 20px; }
+  .payment-input label {
+    display: block;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #a5abc5; }
+  .payment-input input {
+    padding: 0 18px;
+    height: 45px;
+    border: 1px solid #d7d9e0;
+    border-radius: 5px;
+    color: #6e768f;
+    vertical-align: middle; }
+
+[name="cardnumber"] {
+  width: 380px; }
+
+[name="expiry"] {
+  width: 150px; }
+
+[name="cvv"] {
+  width: 75px; }
+
+.submit-wrapper {
+  text-align: right; }
+  .submit-wrapper button {
+    padding: 20px 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    font-weight: 700; }
+  .submit-wrapper .place-order {
+    margin-right: 20px; }
+
+.terms-wrapper {
+  display: inline-block;
+  margin-right: 20px; }
+  .terms-wrapper p {
+    display: inline-block;
+    margin: 0; }
+
+footer {
+  padding: 80px 0;
+  background-color: #444a62; }
+
+.footer-content-wrapper {
+  width: 980px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.footer-slot {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-left: 35px; }
