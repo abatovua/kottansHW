@@ -10,7 +10,7 @@ const deepAssign = function(to, ...from) {
     Reflect.ownKeys(src)
       .filter(key => isEnum.call(src, key))
       .forEach(prop => {
-        if (to[prop] && isObject(src[prop])) {
+        if (to[prop] && isObject(to[prop]) && isObject(src[prop])) {
           deepAssign(to[prop], src[prop]);
 
         } else if (src[prop] instanceof Date || src[prop] instanceof RegExp ||
