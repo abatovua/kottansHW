@@ -4,9 +4,9 @@ const isEnum = Object.prototype.propertyIsEnumerable;
 
 const deepAssign = function(to, ...from) {
 
-	if (!isObject(to)) throw new TypeError(`${to} is not an Object`);
+  if (!isObject(to)) throw new TypeError(`${to} is not an Object`);
 
-	from.forEach(src => {
+  from.forEach(src => {
     Reflect.ownKeys(src)
       .filter(key => isEnum.call(src, key))
       .forEach(prop => {
